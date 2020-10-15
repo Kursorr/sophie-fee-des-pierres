@@ -1,0 +1,15 @@
+{
+  "name": "sfdp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+	  "dev": "sass --watch styles:public/stylesheets",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.27.0"
+  }
+}
