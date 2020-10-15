@@ -14,10 +14,14 @@
   font-family: "Comfortaa-Regular";
   src: url("../../fonts/Comfortaa-Regular.ttf");
 }
+body {
+  background-color: #FAFAFA;
+}
+
 .carousel {
   height: 100vh;
 }
-.carousel .carousel-inner {
+.carousel .carousel-inner .w-100 {
   height: 100vh;
 }
 
@@ -27,7 +31,7 @@ div#carousel > .carousel-indicators {
 div#carousel > .carousel-indicators li {
   height: 14px;
   width: 14px;
-  border: solid #FFF 3px;
+  border: solid #FAFAFA 3px;
   transform: rotate(45deg);
   background-color: transparent;
 }
@@ -35,14 +39,14 @@ div#carousel > .carousel-indicators li:nth-child(2) {
   margin: 0 30px;
 }
 div#carousel > .carousel-indicators li.active {
-  background-color: #FFF;
+  background-color: #FAFAFA;
 }
 
 .container-fluid.main {
   position: relative;
   /* To make the navbar positions relative to this container */
   padding: 0;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .navbar {
@@ -68,12 +72,12 @@ div#carousel > .carousel-indicators li.active {
 }
 
 .nav-link.active, .nav-link {
-  color: #FFF !important;
+  color: #FAFAFA !important;
   text-transform: uppercase;
   font-size: 14px;
 }
 .nav-link.active:hover, .nav-link.active:focus, .nav-link:hover, .nav-link:focus {
-  color: #FFF;
+  color: #FAFAFA;
 }
 
 .coverImg {
@@ -95,11 +99,6 @@ div#carousel > .carousel-indicators li.active {
   z-index: 2;
 }
 
-.btn.btn-primary {
-  background-color: #CFA990;
-  border: none;
-}
-
 #newsletterContainer {
   text-transform: uppercase;
   margin-bottom: 80px;
@@ -108,8 +107,11 @@ div#carousel > .carousel-indicators li.active {
   font-family: "Comfortaa-Bold", sans-serif;
   color: #2D2D2D;
   text-transform: uppercase;
+  font-size: 17px;
 }
 #newsletterContainer h2 {
+  font-family: "segoeuil", sans-serif;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 #newsletterContainer form input {
@@ -118,9 +120,203 @@ div#carousel > .carousel-indicators li.active {
   font-size: 10px;
   color: #9F9F9F;
   width: 24%;
+  background-color: #FAFAFA;
 }
 #newsletterContainer form input:focus {
   outline: none;
+}
+#newsletterContainer button#newsletter {
+  text-transform: uppercase;
+}
+
+#aboutSection {
+  margin-bottom: 40px;
+}
+#aboutSection #text h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#aboutSection #text h2 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#aboutSection #text p {
+  font-family: "segoeuil", sans-serif;
+  text-align: center;
+  color: #2D2D2D;
+  line-height: 21px;
+  font-size: 16px;
+  margin-bottom: 44px;
+}
+#aboutSection #firstImg {
+  width: 384px;
+  height: 518px;
+  object-fit: cover;
+}
+#aboutSection #secondImg {
+  width: 359px;
+  height: 264px;
+  object-fit: cover;
+}
+
+#separation {
+  background-color: #2D2D2D;
+  min-height: 256px;
+  margin-bottom: 50px;
+}
+#separation h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  font-size: 27px;
+  color: #FAFAFA;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#separation p {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 12px;
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+
+#gallery {
+  margin-bottom: 60px;
+}
+#gallery h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#gallery h2 {
+  font-family: "Comfortaa-Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+#gallery #images {
+  position: relative;
+}
+#gallery #images #textSign {
+  position: absolute;
+  left: 14px;
+  top: 148px;
+}
+#gallery #images #selectedImg {
+  width: 528px;
+  height: 484px;
+  object-fit: cover;
+  margin-left: 95px;
+  margin-bottom: 20px;
+}
+#gallery #images .squareNude {
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+#gallery #images h1 {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+#gallery #images h2 {
+  text-align: center;
+  margin-left: 70px;
+  font-size: 13px;
+  color: #2D2D2D;
+  font-family: "Comfortaa-Regular", sans-serif;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+#gallery #images #textSign {
+  width: 142px;
+  height: 400px;
+  object-fit: cover;
+}
+#gallery #images .contactme {
+  margin-left: 70px;
+}
+#gallery #imagesOnGallery {
+  max-height: 677px;
+  overflow-y: scroll;
+}
+#gallery #imagesOnGallery .imagegallery {
+  margin-bottom: 30px;
+}
+#gallery #imagesOnGallery .imagegallery .thumbnails {
+  width: 289px;
+  height: 200px;
+  object-fit: cover;
+}
+#gallery #imagesOnGallery .imagegallery .squareNude {
+  margin-bottom: 23px;
+}
+
+#stones .thumbnailsMini {
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
+}
+
+.btn.btn-primary {
+  background-color: #CFA990;
+  border: solid transparent 2px;
+}
+.btn.btn-primary:hover {
+  background-color: #FAFAFA;
+  color: #CFA990;
+  border: solid #CFA990 2px;
+}
+
+.btn.btn-secondary {
+  background-color: #FAFAFA;
+  color: #CFA990;
+  border: solid #CFA990 2px;
+}
+.btn.btn-secondary.contactme {
+  width: 220px;
+  height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Comfortaa-Bold", sans-serif;
+}
+.btn.btn-secondary.contactme:hover {
+  background-color: #CFA990;
+  color: #FAFAFA;
+}
+
+.squareNude {
+  border: solid #CFA990 2px;
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+
+body::-webkit-scrollbar, ::-webkit-scrollbar {
+  width: 17px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
+  background: #EEEEEE;
+  /* color of the tracking area */
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+  background-color: #CFA990;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #EEEEEE;
+  /* creates padding around scroll thumb */
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,11 +1,17 @@
 @import "variables";
 
+body {
+  background-color: $white;
+}
+
 // Fixing Carousel
 .carousel {
   height: 100vh;
 
   .carousel-inner {
-    height: 100vh;
+    .w-100 {
+      height: 100vh;
+    }
   }
 }
 
@@ -33,7 +39,7 @@ div#carousel > .carousel-indicators {
 .container-fluid.main {
   position: relative; /* To make the navbar positions relative to this container */
   padding: 0;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .navbar {
@@ -85,11 +91,6 @@ div#carousel > .carousel-indicators {
   z-index: 2;
 }
 
-.btn.btn-primary {
-  background-color: $primary;
-  border: none;
-}
-
 // Newsletter
 #newsletterContainer {
   text-transform: uppercase;
@@ -97,11 +98,14 @@ div#carousel > .carousel-indicators {
 
   h1 {
     font-family: $comfortaBold;
-    color: #2D2D2D;
+    color: $dark;
     text-transform: uppercase;
+    font-size: $title;
   }
 
   h2 {
+    font-family: $segoeuil;
+    font-size: 20px;
     margin-bottom: 40px;
   }
 
@@ -111,10 +115,239 @@ div#carousel > .carousel-indicators {
     font-size: 10px;
     color: #9F9F9F;
     width: 24%;
+    background-color: $white;
 
     &:focus {
       outline: none;
     }
   }
+
+  button#newsletter {
+    text-transform: uppercase;
+  }
 }
 
+// About
+
+#aboutSection {
+  margin-bottom: 40px;
+
+  #text {
+    h1 {
+      font-family: $comfortaBold;
+      color: $dark;
+      font-size: $title;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-family: $comfortaBold;
+      text-transform: uppercase;
+      font-size: $subtitle;
+    }
+
+    p {
+      font-family: $segoeuil;
+      text-align: center;
+      color: $dark;
+      line-height: 21px;
+      font-size: 16px;
+      margin-bottom: 44px;
+    }
+  }
+
+  #firstImg {
+    width: 384px;
+    height: 518px;
+    object-fit: cover;
+  }
+
+  #secondImg {
+    width: 359px;
+    height: 264px;
+    object-fit: cover;
+  }
+}
+
+#separation {
+  background-color: $dark;
+  min-height: 256px;
+  margin-bottom: 50px;
+
+  h1 {
+    font-family: $comfortaBold;
+    font-size: 27px;
+    color: $white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: $comfortaRegular;
+    font-size: 12px;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+// Gallery
+#gallery {
+  margin-bottom: 60px;
+
+  h1 {
+    font-family: $comfortaBold;
+    color: $dark;
+    font-size: $title;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-family: $comfortaRegular;
+    text-transform: uppercase;
+    font-size: $subtitle;
+    margin-bottom: 35px;
+  }
+
+  #images {
+    position: relative;
+
+    #textSign {
+      position: absolute;
+      left: 14px;
+      top: 148px;
+    }
+
+    #selectedImg {
+      width: 528px;
+      height: 484px;
+      object-fit: cover;
+      margin-left: 95px;
+      margin-bottom: 20px;
+    }
+
+    .squareNude {
+      margin-left: 70px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: $title;
+      font-family: $comfortaBold;
+      color: $dark;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      margin-left: 70px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-left: 70px;
+      font-size: 13px;
+      color: $dark;
+      font-family: $comfortaRegular;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    #textSign {
+      width: 142px;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .contactme {
+      margin-left: 70px;
+    }
+  }
+
+  #imagesOnGallery {
+    max-height: 677px;
+    overflow-y: scroll;
+
+    .imagegallery {
+      margin-bottom: 30px;
+
+      .thumbnails {
+        width: 289px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .squareNude {
+        margin-bottom: 23px;
+      }
+    }
+
+
+  }
+}
+
+// Stones
+#stones {
+  .thumbnailsMini {
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+  }
+}
+
+
+// Customize buttons
+.btn.btn-primary {
+  background-color: $primary;
+  border: solid transparent 2px;
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border: solid $primary 2px;
+  }
+}
+
+.btn.btn-secondary {
+  background-color: $white;
+  color: $primary;
+  border: solid $primary 2px;
+
+  &.contactme {
+    width: 220px;
+    height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $comfortaBold;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+// Squares
+
+.squareNude {
+  border: solid $primary 2px;
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+
+// Scrollbar
+
+body::-webkit-scrollbar, ::-webkit-scrollbar {
+  width: 17px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track, ::-webkit-scrollbar-track {
+  background: #EEEEEE;        /* color of the tracking area */
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+  background-color: $primary;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #EEEEEE;  /* creates padding around scroll thumb */
+}
