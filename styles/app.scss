@@ -1,0 +1,120 @@
+@import "variables";
+
+// Fixing Carousel
+.carousel {
+  height: 100vh;
+
+  .carousel-inner {
+    height: 100vh;
+  }
+}
+
+// Fixing Carousel Indicator
+div#carousel > .carousel-indicators {
+  bottom: 60px!important;
+
+  li {
+    height: 14px;
+    width: 14px;
+    border: solid $white 3px;
+    transform: rotate(45deg);
+    background-color: transparent;
+
+    &:nth-child(2) {
+      margin: 0 30px;
+    }
+
+    &.active {
+      background-color: $white;
+    }
+  }
+}
+
+.container-fluid.main {
+  position: relative; /* To make the navbar positions relative to this container */
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.navbar {
+  background-image: none;
+  background-color: transparent!important; /* Make the menu become transparent */
+  padding: 10px;
+  position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-collapse {
+  width: unset;
+}
+
+// Fix les liens dans la nav
+.navbar-nav .nav-item {
+  margin-right: 35px;
+}
+
+.nav-link.active, .nav-link {
+  color: $white!important;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  &:hover, &:focus {
+    color: $white;
+  }
+}
+
+.coverImg {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  right: 0;
+}
+
+.coverText {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.logo {
+  z-index: 2;
+}
+
+.btn.btn-primary {
+  background-color: $primary;
+  border: none;
+}
+
+// Newsletter
+#newsletterContainer {
+  text-transform: uppercase;
+  margin-bottom: 80px;
+
+  h1 {
+    font-family: $comfortaBold;
+    color: #2D2D2D;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  form input {
+    border: none;
+    border-bottom: solid $primary 2px;
+    font-size: 10px;
+    color: #9F9F9F;
+    width: 24%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
