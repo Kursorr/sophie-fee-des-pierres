@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "segoeuil";
+  src: url("../../fonts/segoeuil.ttf");
+}
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url("../../fonts/Comfortaa-Bold.ttf");
+}
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("../../fonts/Comfortaa-Light.ttf");
+}
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("../../fonts/Comfortaa-Regular.ttf");
+}
+.carousel {
+  height: 100vh;
+}
+.carousel .carousel-inner {
+  height: 100vh;
+}
+
+div#carousel > .carousel-indicators {
+  bottom: 60px !important;
+}
+div#carousel > .carousel-indicators li {
+  height: 14px;
+  width: 14px;
+  border: solid #FFF 3px;
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+div#carousel > .carousel-indicators li:nth-child(2) {
+  margin: 0 30px;
+}
+div#carousel > .carousel-indicators li.active {
+  background-color: #FFF;
+}
+
+.container-fluid.main {
+  position: relative;
+  /* To make the navbar positions relative to this container */
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.navbar {
+  background-image: none;
+  background-color: transparent !important;
+  /* Make the menu become transparent */
+  padding: 10px;
+  position: absolute;
+  /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-collapse {
+  width: unset;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 35px;
+}
+
+.nav-link.active, .nav-link {
+  color: #FFF !important;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.nav-link.active:hover, .nav-link.active:focus, .nav-link:hover, .nav-link:focus {
+  color: #FFF;
+}
+
+.coverImg {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  right: 0;
+}
+
+.coverText {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.logo {
+  z-index: 2;
+}
+
+.btn.btn-primary {
+  background-color: #CFA990;
+  border: none;
+}
+
+#newsletterContainer {
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+#newsletterContainer h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+  text-transform: uppercase;
+}
+#newsletterContainer h2 {
+  margin-bottom: 40px;
+}
+#newsletterContainer form input {
+  border: none;
+  border-bottom: solid #CFA990 2px;
+  font-size: 10px;
+  color: #9F9F9F;
+  width: 24%;
+}
+#newsletterContainer form input:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=app.css.map */
