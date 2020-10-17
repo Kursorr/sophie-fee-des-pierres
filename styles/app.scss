@@ -280,17 +280,99 @@ div#carousel > .carousel-indicators {
         margin-bottom: 23px;
       }
     }
-
-
   }
 }
 
 // Stones
 #stones {
-  .thumbnailsMini {
-    width: 144px;
-    height: 144px;
-    object-fit: cover;
+  background-color: $dark;
+  margin-bottom: 100px;
+  padding-bottom: 65px;
+
+  .container {
+    padding: 0;
+  }
+
+  h1 {
+    font-family: $comfortaBold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: $comfortaRegular;
+    font-size: 18px;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  hr {
+    width: 100%;
+    border: solid $white 2px;
+    margin: 0 0 28px 0;
+  }
+
+  input {
+    border: none;
+    border-bottom: solid $white 2px;
+    color: $white;
+    background-color: transparent;
+    outline: none;
+    font-size: 13px;
+    width: 70%;
+
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .inputWBtn {
+    margin-bottom: 40px;
+  }
+
+  // thumbnail section
+  .thumbnailInformations {
+    .thumbnailsMini {
+      width: 144px;
+      height: 144px;
+      object-fit: cover;
+    }
+
+    .thumbnailTitle {
+      font-family: $comfortaRegular;
+      font-size: 13px;
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
+
+    .thumbnailText {
+      font-family: $segoeuil;
+      font-size: 12px;
+      color: $white;
+    }
+  }
+
+  .dropdown {
+    width: 70%;
+  }
+
+  #stonesgallery {
+    height: 465px;
+    overflow-y: scroll;
+
+    hr {
+      margin-bottom: 0;
+      width: 70%;
+    }
+
+    .btn.btn-primary.read {
+      font-size: 11px;
+      margin-right: 25px;
+    }
   }
 }
 
@@ -299,11 +381,17 @@ div#carousel > .carousel-indicators {
 .btn.btn-primary {
   background-color: $primary;
   border: solid transparent 2px;
+  text-transform: uppercase;
 
   &:hover {
     background-color: $white;
     color: $primary;
     border: solid $primary 2px;
+  }
+
+  &:focus, &:active {
+    outline: none !important;
+    box-shadow: none;
   }
 }
 
@@ -323,6 +411,38 @@ div#carousel > .carousel-indicators {
       background-color: $primary;
       color: $white;
     }
+
+    &:focus, &:active {
+      outline: none !important;
+      box-shadow: none;
+    }
+  }
+}
+
+// Select / options
+
+.dropdown {
+  button.btn.btn-secondary {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid $white 2px;
+    border-radius: 0;
+    color: $white;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 0;
+    padding-left: 5px;
+
+    &:focus, &:active {
+      outline: none !important;
+      box-shadow: none;
+    }
+  }
+
+  ul.dropdown-menu {
+    width: 100%;
   }
 }
 

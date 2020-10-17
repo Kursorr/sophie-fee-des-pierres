@@ -259,20 +259,93 @@ div#carousel > .carousel-indicators li.active {
   margin-bottom: 23px;
 }
 
-#stones .thumbnailsMini {
+#stones {
+  background-color: #2D2D2D;
+  margin-bottom: 100px;
+  padding-bottom: 65px;
+}
+#stones .container {
+  padding: 0;
+}
+#stones h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #FAFAFA;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+#stones h2 {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 18px;
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+#stones hr {
+  width: 100%;
+  border: solid #FAFAFA 2px;
+  margin: 0 0 28px 0;
+}
+#stones input {
+  border: none;
+  border-bottom: solid #FAFAFA 2px;
+  color: #FAFAFA;
+  background-color: transparent;
+  outline: none;
+  font-size: 13px;
+  width: 70%;
+}
+#stones input::placeholder {
+  color: #FAFAFA;
+}
+#stones .inputWBtn {
+  margin-bottom: 40px;
+}
+#stones .thumbnailInformations .thumbnailsMini {
   width: 144px;
   height: 144px;
   object-fit: cover;
+}
+#stones .thumbnailInformations .thumbnailTitle {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 13px;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+#stones .thumbnailInformations .thumbnailText {
+  font-family: "segoeuil", sans-serif;
+  font-size: 12px;
+  color: #FAFAFA;
+}
+#stones .dropdown {
+  width: 70%;
+}
+#stones #stonesgallery {
+  height: 465px;
+  overflow-y: scroll;
+}
+#stones #stonesgallery hr {
+  margin-bottom: 0;
+  width: 70%;
+}
+#stones #stonesgallery .btn.btn-primary.read {
+  font-size: 11px;
+  margin-right: 25px;
 }
 
 .btn.btn-primary {
   background-color: #CFA990;
   border: solid transparent 2px;
+  text-transform: uppercase;
 }
 .btn.btn-primary:hover {
   background-color: #FAFAFA;
   color: #CFA990;
   border: solid #CFA990 2px;
+}
+.btn.btn-primary:focus, .btn.btn-primary:active {
+  outline: none !important;
+  box-shadow: none;
 }
 
 .btn.btn-secondary {
@@ -290,6 +363,31 @@ div#carousel > .carousel-indicators li.active {
 .btn.btn-secondary.contactme:hover {
   background-color: #CFA990;
   color: #FAFAFA;
+}
+.btn.btn-secondary.contactme:focus, .btn.btn-secondary.contactme:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.dropdown button.btn.btn-secondary {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #FAFAFA 2px;
+  border-radius: 0;
+  color: #FAFAFA;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+  margin-left: 0;
+  padding-left: 5px;
+}
+.dropdown button.btn.btn-secondary:focus, .dropdown button.btn.btn-secondary:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.dropdown ul.dropdown-menu {
+  width: 100%;
 }
 
 .squareNude {
