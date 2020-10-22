@@ -114,17 +114,6 @@ div#carousel > .carousel-indicators li.active {
   font-size: 20px;
   margin-bottom: 40px;
 }
-#newsletterContainer form input {
-  border: none;
-  border-bottom: solid #CFA990 2px;
-  font-size: 10px;
-  color: #9F9F9F;
-  width: 24%;
-  background-color: #FAFAFA;
-}
-#newsletterContainer form input:focus {
-  outline: none;
-}
 #newsletterContainer button#newsletter {
   text-transform: uppercase;
 }
@@ -261,7 +250,7 @@ div#carousel > .carousel-indicators li.active {
 
 #stones {
   background-color: #2D2D2D;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   padding-bottom: 65px;
 }
 #stones .container {
@@ -269,7 +258,7 @@ div#carousel > .carousel-indicators li.active {
 }
 #stones h1 {
   font-family: "Comfortaa-Bold", sans-serif;
-  font-size: 22px;
+  font-size: 17px;
   text-transform: uppercase;
   color: #FAFAFA;
   margin-top: 45px;
@@ -277,7 +266,7 @@ div#carousel > .carousel-indicators li.active {
 }
 #stones h2 {
   font-family: "Comfortaa-Regular", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #FAFAFA;
   text-transform: uppercase;
 }
@@ -331,6 +320,94 @@ div#carousel > .carousel-indicators li.active {
 #stones #stonesgallery .btn.btn-primary.read {
   font-size: 11px;
   margin-right: 25px;
+}
+
+#contact {
+  background-image: url("../../images/Groupe24.svg");
+  background-repeat: no-repeat;
+  background-position-x: 245px;
+  background-position-y: 67px;
+}
+#contact h1 {
+  font-family: "Comfortaa-Bold", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+#contact h2 {
+  font-family: "Comfortaa-Regular", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#contact input {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#contact .formcontactitlte h1 {
+  font-size: 17px;
+  font-family: "Comfortaa-Bold", sans-serif;
+  color: #2D2D2D;
+}
+#contact .formcontactitlte h2 {
+  font-size: 17px;
+  font-family: "segoeuil", sans-serif;
+  text-align: center;
+  color: #707070;
+  width: 50%;
+}
+#contact .contactI {
+  font-family: "segoeuil", sans-serif;
+  font-size: 13px;
+  color: #707070;
+}
+#contact #infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact #infos h3 {
+  margin-bottom: 10px;
+  color: #2D2D2D;
+  font-size: 20px;
+  font-family: "Comfortaa-Bold", sans-serif;
+}
+#contact #infos .i {
+  margin-bottom: 35px;
+  color: #2D2D2D;
+  font-size: 20px;
+  font-family: "Comfortaa-Regular", sans-serif;
+}
+
+#footer {
+  background-color: #2D2D2D;
+  padding: 15px 0;
+}
+#footer p {
+  color: #FAFAFA;
+  margin-bottom: 0;
+}
+#footer #medias img {
+  margin-right: 15px;
+}
+
+form input {
+  border: none;
+  border-bottom: solid #CFA990 2px;
+  font-size: 10px;
+  color: #9F9F9F;
+  width: 24%;
+  background-color: #FAFAFA;
+}
+form input:focus {
+  outline: none;
+}
+
+.textarea {
+  border: solid #CFA990 1px;
+  margin-bottom: 30px;
 }
 
 .btn.btn-primary {

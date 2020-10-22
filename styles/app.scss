@@ -109,19 +109,6 @@ div#carousel > .carousel-indicators {
     margin-bottom: 40px;
   }
 
-  form input {
-    border: none;
-    border-bottom: solid $primary 2px;
-    font-size: 10px;
-    color: #9F9F9F;
-    width: 24%;
-    background-color: $white;
-
-    &:focus {
-      outline: none;
-    }
-  }
-
   button#newsletter {
     text-transform: uppercase;
   }
@@ -286,7 +273,7 @@ div#carousel > .carousel-indicators {
 // Stones
 #stones {
   background-color: $dark;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   padding-bottom: 65px;
 
   .container {
@@ -295,7 +282,7 @@ div#carousel > .carousel-indicators {
 
   h1 {
     font-family: $comfortaBold;
-    font-size: 22px;
+    font-size: $title;
     text-transform: uppercase;
     color: $white;
     margin-top: 45px;
@@ -304,7 +291,7 @@ div#carousel > .carousel-indicators {
 
   h2 {
     font-family: $comfortaRegular;
-    font-size: 18px;
+    font-size: $subtitle;
     color: $white;
     text-transform: uppercase;
   }
@@ -376,6 +363,114 @@ div#carousel > .carousel-indicators {
   }
 }
 
+// Contact page
+
+#contact {
+  background-image: url('../../images/Groupe24.svg');
+  background-repeat: no-repeat;
+  background-position-x: 245px;
+  background-position-y: 67px;
+
+  h1 {
+    font-family: $comfortaBold;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: $comfortaRegular;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .formcontactitlte {
+    h1 {
+      font-size: 17px;
+      font-family: $comfortaBold;
+      color: $dark;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-family: $segoeuil;
+      text-align: center;
+      color: #707070;
+      width: 50%;
+    }
+  }
+
+  .contactI {
+    font-family: $segoeuil;
+    font-size: 13px;
+    color: #707070;
+  }
+
+  #infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      margin-bottom: 10px;
+      color: $dark;
+      font-size: $subtitle;
+      font-family: $comfortaBold;
+    }
+
+    .i {
+      margin-bottom: 35px;
+      color: $dark;
+      font-size: $subtitle;
+      font-family: $comfortaRegular;
+    }
+  }
+}
+
+// Footer
+
+#footer {
+  background-color: $dark;
+  padding: 15px 0;
+
+  p {
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  #medias {
+    img {
+      margin-right: 15px;
+    }
+  }
+}
+
+// Form
+form input {
+  border: none;
+  border-bottom: solid $primary 2px;
+  font-size: 10px;
+  color: #9F9F9F;
+  width: 24%;
+  background-color: $white;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.textarea {
+  border: solid $primary 1px;
+  margin-bottom: 30px;
+}
 
 // Customize buttons
 .btn.btn-primary {
