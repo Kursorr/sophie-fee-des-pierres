@@ -370,6 +370,11 @@ div#carousel > .carousel-indicators {
   background-repeat: no-repeat;
   background-position-x: 245px;
   background-position-y: 67px;
+  margin-bottom: 78px;
+
+  #contactSection {
+    margin-bottom: 135px;
+  }
 
   h1 {
     font-family: $comfortaBold;
@@ -512,6 +517,13 @@ form input {
       outline: none !important;
       box-shadow: none;
     }
+  }
+
+  &#backToHome {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $comfortaBold;
+    padding: 20px 45px;
   }
 }
 
